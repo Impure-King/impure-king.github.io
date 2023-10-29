@@ -59,7 +59,37 @@ body {
     padding-left: 10px;
 }
 
+.title {
+    text-align: center;
+}
+
+#introduction-image {
+    text-align: center;
+}
+
+#introduction-image img {
+    outline:auto;
+    outline-color: aqua;
+    height: 200px;
+}
+
 .introduction {
+    /* Formatting the div to its surroundings. */
+    margin:0 auto;
     padding-top : 0px;
     padding-left: 10px;
+    
+    /* Formatting an outline. */
+    outline: auto;
+    outline-color: lightgray;
+    outline-width:1px;
+    outline-offset: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.introduction-text {
+    font-size: large;
+    font-family: cursive;
+    text-align: center;
 }

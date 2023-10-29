@@ -4,9 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // fix the function.
     const navbarEvent = function(elem) {
-        const rect = elem.getBoundingClientRect();
-        console.log(rect.x)
-        rect.x += 100;
+        
     }
 
     for (let i = 0; i < navbarElems.length; i++) {
