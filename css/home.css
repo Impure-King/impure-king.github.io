@@ -1,5 +1,5 @@
+/* NAVBAR DESIGN */
 /* Trying to prevent the gap of the top div. */
-
 body {
     margin:0;
     padding:0;
@@ -53,15 +53,16 @@ body {
     display:block;
 }
 
+
+
+/* ACTUAL PAGE DESIGN */
 /* This is the designing of my intro page */
 
 .title {
     padding-left: 10px;
-}
-
-.title {
     text-align: center;
 }
+
 
 #introduction-image {
     text-align: center;
