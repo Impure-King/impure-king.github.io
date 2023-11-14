@@ -1,7 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-
+document.addEventListener("DOMContentLoaded", function () {
     // const menu_items = document.querySelector(".navbarelements") as HTMLUListElement|null;
-    
     // // Looping if not null:
     // if (menu_items) {
     //     const list_items = menu_items.getElementsByTagName("li") as HTMLCollectionOf<HTMLLIElement>;
@@ -9,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     //         const elem = list_items[i] as HTMLLIElement;
     //         console.log(elem);
     //         elem.addEventListener("mouseover", () => {
-                
     //             // if (elem.style.transform !== "translateX(-100px)"){
     //             //     elem.style.transform = "translateX(-100px)";
     //             // }
@@ -19,18 +16,18 @@ document.addEventListener("DOMContentLoaded", function() {
     //         })
     //     }
     // }
-    const listener_object = document.getElementById("project-tag") as HTMLElement|null;
-    listener_object?.addEventListener("mouseleave", function(){
-        const projects_list_object = document.querySelector("#project-list") as HTMLUListElement|null;
-        if (projects_list_object){
+    var listener_object = document.getElementById("project-tag");
+    listener_object === null || listener_object === void 0 ? void 0 : listener_object.addEventListener("mouseleave", function () {
+        var projects_list_object = document.querySelector("#project-list");
+        if (projects_list_object) {
             projects_list_object.style.width = "80px";
             projects_list_object.style.transform = "translateY(-10000px)";
             listener_object.style.boxShadow = "none";
         }
-    })
-    listener_object?.addEventListener("mouseover", function() {
-        const projects_list_object = document.querySelector("#project-list") as HTMLUListElement|null;
-        if (projects_list_object){
+    });
+    listener_object === null || listener_object === void 0 ? void 0 : listener_object.addEventListener("mouseover", function () {
+        var projects_list_object = document.querySelector("#project-list");
+        if (projects_list_object) {
             projects_list_object.style.width = "fit-content";
             projects_list_object.style.transform = "translateY(0px)";
             listener_object.style.boxShadow = "0 0 10px black";
@@ -47,6 +44,5 @@ document.addEventListener("DOMContentLoaded", function() {
         //         }
         //     }
         // }
-    })
-})
-
+    });
+});

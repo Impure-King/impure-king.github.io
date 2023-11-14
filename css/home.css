@@ -7,24 +7,25 @@ body {
 
 /* This is the basic designing of the navigation bar. */
 
-#mainbar {
+.navbar {
     background-color: darkslategray;
     height: 60px;
+    box-shadow: 0 0 10px black;
 }
 
 
-#mainbar ul {
+.navbar ul {
     list-style-type: none;
     padding: 0; /* Unordered lists have their own padding. */
     margin: 0;
 }
 
-#mainbar ul li {
+.navbarelements li {
     float: left; /* Forces the blocks to float left. */
     height: 60px;
 }
 
-#mainbar ul li a {
+.navbar ul li a {
     display: block;
     padding-left: 10px;
     padding-right: 10px;
@@ -34,13 +35,31 @@ body {
 
 /* Styling the hover a bit */
 
-#mainbar ul li:hover {
-    background-color: black;
+.navbar ul li:hover {
+    background-color: rgb(48, 94, 94);
     font-weight: bold;
-    text-decoration: underline;
+    transition: 0.5s;
 }
 
+/* Creating the new cascading navbar */
 
+#project-list {
+    width: 80px;
+    transform: translateY(-10000px);
+    transition:0.5s;
+}
+
+#project-list li {
+    /* transform: translateY(-10000px); */
+    transition:0.5s;
+    background-color: rgb(13, 56, 56);
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+}
+
+#project-tag:hover {
+    text-decoration: none;
+}
 
 /* Adjusting the logo a bit. */
 

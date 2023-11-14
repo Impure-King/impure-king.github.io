@@ -5,55 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
-    <script src="script/home.ts"></script>
+    <script src="script/home.js"></script>
     <title>Home</title>
 </head>
 <body>
+
     <!--A home bar for user navigation.-->
-    <header>
-        <nav class="navbar" id="mainbar">
-            <!-- Eventually fill in the links for each page completion. -->
-            <ul>
-                <li class = "navbarelements">
-                    <a href="/">
-                        <img id="logo" src="./images/logo.png">
-                    </a>
-                </li>
-                <li class = "navbarelements">
-                    <a href="/">
-                        <p>About me</p>
-                    </a>
-                </li>
-                <li class = "navbarelements">
-                    <a href="#documentation">
-                        <p>TensorWrap Documentation</p>
-                    </a>
-                </li>
-                <li class = "navbarelements">
-                    <a href="#Projects">
-                        <p>Projects</p>
-                    </a>
-                </li>
-                <li class="navbarelements">
-                    <a href="/competitions">
-                        <p>Math Competition Resources</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar" id="mainbar">
+        <!-- Eventually fill in the links for each page completion. -->
+        <ul class="navbarelements">
+            <li>
+                <a href="/">
+                    <img id="logo" src="./images/logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <p>About me</p>
+                </a>
+            </li>
+            <li>
+                <a href="#documentation">
+                    <p>TensorWrap Documentation</p>
+                </a>
+            </li>
+            <li id="project-tag">
+                <a href="#Projects">
+                    <p>Projects</p>
+                </a>
+                <ul id="project-list">
+                    <li>
+                        <a link="#Ring">
+                            <p>Code Geass Ring</p> 
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/competitions">
+                    <p>Math Competition Resources</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     <!--Page Specific Setup-->
     <div class="title" id="introduction-title">
         <h1 class = "title">Welcome to my Home Page!</h1>
     </div>
     <div class="image" id="introduction-image">
         <img src="./images/Home Image.jpeg">
-    </div>    
+    </div>
+
     <div class="introduction">
         <p class="introduction-text">I am Aadesh Kumar, currently a highschool student in STEM Innovation Academy.</p>
         <p class="introduction-text">I am full-time student, a part-time teacher, and a full-blown inquisitive innovator.</p>
         <p class="introduction-text">I have various programming/mathematical oriented hobbies and currently am a maintainer of the TensorWrap library.</p>
     </div>
+
 </body>
 </html>
 
